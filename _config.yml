@@ -1,9 +1,9 @@
 # Site settings
-title: "Marin's Personal Website"
+title: "Oscar Marin Personal Website"
 description: "Welcome to my personal website where I share insights, projects, and more."
 author:
   name: "Marin"
-  email: "your-email@example.com"
+  email: "mysite@marin.cr"
 
 # URL settings
 url: "https://marin.cr"
@@ -14,9 +14,9 @@ theme: jekyll-theme-minimal
 
 # Social media links (optional)
 social_links:
-  github:  your-github-username
-  linkedin: your-linkedin-username
-  twitter: your-twitter-username
+  github:  marinoscar
+  linkedin: marinoscar
+  twitter: marin_cr
 
 # Google Analytics (optional)
 google_analytics: UA-XXXXXXXXX-X
