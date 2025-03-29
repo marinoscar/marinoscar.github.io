@@ -1,0 +1,25 @@
+# Site settings
+title: "Marin's Personal Website"
+description: "Welcome to my personal website where I share insights, projects, and more."
+author:
+  name: "Marin"
+  email: "your-email@example.com"
+
+# URL settings
+url: "https://marin.cr"
+baseurl: "" # Leave this empty since you're using a custom domain
+
+# Theme settings
+theme: jekyll-theme-minimal
+
+# Social media links (optional)
+social_links:
+  github:  your-github-username
+  linkedin: your-linkedin-username
+  twitter: your-twitter-username
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXXXXX-X
+
+# Build settings
+markdown: kramdown
