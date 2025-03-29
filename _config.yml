@@ -10,7 +10,9 @@ url: "https://marin.cr"
 baseurl: "" # Leave this empty since you're using a custom domain
 
 # Theme settings
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 ###############################################
 # --- List of links in the navigation bar --- #
