@@ -13,7 +13,7 @@
 title: Oscar Marin Personal Website
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://chauff.github.io"
+url: "https://marin.cr"
 baseurl: ""
 
 # Your name to show in the footer
@@ -28,10 +28,6 @@ author:
 
 navbar-links:
   Blog: "blog"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
