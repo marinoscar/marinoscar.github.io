@@ -2,9 +2,9 @@
 layout: post
 title: Introduction to Semantic Models and Why They Matter for the Future of AI Interfaces
 subtitle: How semantic models empower conversational AI to better understand your business.
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/semantic-models-01.png
+thumbnail-img: /assets/img/semantic-models-01.png
+share-img: /assets/img/semantic-models-01.png
 tags: [semantic-models, enterprise-ai, ai-strategy, future-of-work]
 author: Oscar Marin
 ---
