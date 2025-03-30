@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Oscar Marin
-subtitle: Personal Website
+subtitle: Fueling innovation with data. Reimagining the world through AI
 ---
 
 ## About Me
