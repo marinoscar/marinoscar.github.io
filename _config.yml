@@ -12,6 +12,10 @@
 # Name of website
 title: Oscar Marin Personal Website
 
+# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+url: "http://chauff.github.io"
+baseurl: ""
+
 # Your name to show in the footer
 author: 
     name: Oscar Marin
