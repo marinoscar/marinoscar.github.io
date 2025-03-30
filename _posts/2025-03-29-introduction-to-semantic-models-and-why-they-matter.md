@@ -11,7 +11,7 @@ author: Oscar Marin
 
 Artificial intelligence is reshaping how we interact with technology, moving us toward more natural, conversational experiences, also improving significantly how we interact with technology and how quickly we can maximize the value that we can get.
 
-In this first part of our series, we introduce **semantic models** – a foundation that gives AI a richer understanding of context and meaning. We’ll explore why semantic models are poised to become critical for the **future of AI interfaces**, enabling more intuitive conversations between humans and machines. As Microsoft’s CEO Satya Nadella famously said, _“Human language is the new UI layer, bots are like new applications, and digital assistants are meta apps.”_ 
+So about **semantic models** – a foundation that gives AI a richer understanding of context and meaning. We’ll explore why semantic models are poised to become critical for the **future of AI interfaces**, enabling more intuitive conversations between humans and machines. As Microsoft’s CEO Satya Nadella famously said, _“Human language is the new UI layer, bots are like new applications, and digital assistants are meta apps.”_ 
 
 In other words, the way we communicate with computers is shifting from clicking and coding to **speaking and conversing**. For business leaders, this isn’t just a tech trend – it’s a strategic evolution. Embracing semantic models now can set the stage for AI interfaces that feel as natural as talking to a colleague, helping your organization lead in this new era.
 
