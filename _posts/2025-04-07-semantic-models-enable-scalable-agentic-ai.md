@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enterprise Applications: How Semantic Models Enable Scalable Agentic AI
+title: "Enterprise Applications: How Semantic Models Enable Scalable Agentic AI"
 subtitle: Unlocking the Power of Context: Why Semantic Models Are the Backbone of Intelligent, Scalable AI Agents in the Enterprise.
 cover-img: /assets/img/semantic-agent-042025.png
 thumbnail-img: /assets/img/semantic-agent-042025.png
