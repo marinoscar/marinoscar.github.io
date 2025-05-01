@@ -5,7 +5,7 @@ subtitle: How a New Open Standard Is Making AI Smarter, Faster, and More Useful.
 cover-img: /assets/img/mcp-04302025.png
 thumbnail-img: /assets/img/mcp-04302025.png
 share-img: /assets/img/mcp-04302025.png
-tags: [semantic-models, enterprise-ai, ai-strategy, future-of-work]
+tags: [mcp, model-context-protocol, enterprise-ai, ai-strategy, future-of-work]
 author: Oscar Marin
 ---
 
