@@ -30,7 +30,7 @@ Manage your server files through a web interface.
 
 ## 🐘 pgAdmin  
 Web interface to manage PostgreSQL databases.  
-🔗 [https://db.marin.cr](https://db.marin.cr)
+🔗 [https://pgadmin.marin.cr](https://pgadmin.marin.cr)
 
 ---
 
