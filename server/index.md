@@ -34,4 +34,16 @@ Web interface to manage PostgreSQL databases.
 
 ---
 
+## 🔄 n8n  
+Low-code workflow automation and integration platform.  
+🔗 [https://automation.marin.cr](https://automation.marin.cr)
+
+---
+
+## 🧠 Flowise  
+Visual builder for AI agents, LLM apps, and workflows.  
+🔗 [https://agentic.marin.cr](https://agentic.marin.cr)
+
+---
+
 🔐 All tools are protected by authentication and HTTPS for secure access.
