@@ -46,4 +46,10 @@ Visual builder for AI agents, LLM apps, and workflows.
 
 ---
 
+## 🧬 Milvus  
+High-performance vector database for similarity search and AI apps.  
+🔗 [https://vectordb.marin.cr](https://vectordb.marin.cr)
+
+---
+
 🔐 All tools are protected by authentication and HTTPS for secure access.
