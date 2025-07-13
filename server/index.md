@@ -52,4 +52,10 @@ High-performance vector database for similarity search and AI apps.
 
 ---
 
+## 🧰 Attu  
+Web-based admin UI for managing Milvus collections and data.  
+🔗 [https://attu.marin.cr](https://attu.marin.cr)
+
+---
+
 🔐 All tools are protected by authentication and HTTPS for secure access.
