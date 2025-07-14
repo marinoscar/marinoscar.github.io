@@ -58,4 +58,10 @@ Web-based admin UI for managing Milvus collections and data.
 
 ---
 
+## ⚙️ MarinAPI  
+Custom-built .NET Web API for internal tools. Includes Swagger UI for live testing and documentation.  
+🔗 [https://api.marin.cr/swagger/index.html](https://api.marin.cr/swagger/index.html)
+
+---
+
 🔐 All tools are protected by authentication and HTTPS for secure access.
