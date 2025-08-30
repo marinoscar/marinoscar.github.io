@@ -40,6 +40,12 @@ Low-code workflow automation and integration platform.
 
 ---
 
+## 📑 NocoDB  
+Open-source Airtable alternative that turns PostgreSQL and other databases into a smart spreadsheet interface. Perfect for managing structured data with a user-friendly UI.  
+🔗 [https://nocodb.marin.cr](https://nocodb.marin.cr)
+
+---
+
 ## 🧠 Flowise  
 Visual builder for AI agents, LLM apps, and workflows.  
 🔗 [https://agentic.marin.cr](https://agentic.marin.cr)
