@@ -46,6 +46,12 @@ Open-source Airtable alternative that turns PostgreSQL and other databases into 
 
 ---
 
+## 📈 Superset  
+Modern data exploration and visualization platform. Build dashboards, charts, and explore your PostgreSQL data interactively.  
+🔗 [https://superset.marin.cr](https://superset.marin.cr)
+
+---
+
 ## 🧠 Flowise  
 Visual builder for AI agents, LLM apps, and workflows.  
 🔗 [https://agentic.marin.cr](https://agentic.marin.cr)
