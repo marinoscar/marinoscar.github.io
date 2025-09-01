@@ -45,9 +45,11 @@ Open-source Airtable alternative that turns PostgreSQL and other databases into 
 🔗 [https://nocodb.marin.cr](https://nocodb.marin.cr)
 
 ---
-## 🛠️ Appsmith  
+
+## 🛠️ Appsmith
 Low-code platform to quickly build and deploy internal tools, dashboards, and workflows with drag-and-drop UI components and PostgreSQL (or other database) integrations.  
 🔗 [https://appsmith.marin.cr](https://appsmith.marin.cr)
+
 ---
 
 ## 📈 Superset  
