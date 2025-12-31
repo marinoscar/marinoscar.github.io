@@ -4,9 +4,25 @@ title: Restaurants to Visit
 permalink: /food/
 ---
 
-## 🍽️ Recommended Restaurants (with Approx. Distance from 1519 Heartwood Dr, Conroe, TX 77384)
+## 🍽️ Recommended Restaurants
 
-### 🦪 Good Charlie’s Oyster Bar & Seafood Kitchen
+### 🦐 [Vida Mariscos (Cypress)](https://www.vidamariscos.com/)
+Mexican seafood with a lively atmosphere, featuring ceviches, cocktails, and mariscos favorites.  
+**Address:** [22400 Tomball Parkway, Houston, TX 77070](https://www.google.com/maps/search/?api=1&query=22400+Tomball+Parkway+Houston+TX+77070)  
+**Distance:** ~30 mi (about 35–45 min)  
+**Website:** https://www.vidamariscos.com/
+
+---
+
+### 🍖 [Sal e Brasa Brazilian Steakhouse](https://www.salebrasausa.com/)
+Traditional Brazilian churrascaria offering rodízio-style grilled meats, salad bar, and classic sides — great for celebrations or special dinners.  
+**Address:** [1700 Research Forest Dr, Shenandoah, TX 77381](https://www.google.com/maps/search/?api=1&query=1700+Research+Forest+Dr+Shenandoah+TX+77381)  
+**Distance:** ~18 mi (about 25 min)  
+**Website:** https://www.salebrasausa.com/
+
+---
+
+### 🦪 [Good Charlie’s Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/)
 Fresh seafood, oysters, and Cajun-inspired dishes.  
 **Address:** [545 Woodland Square Blvd, Conroe, TX 77384](https://www.google.com/maps/search/?api=1&query=545+Woodland+Square+Blvd+Conroe+TX+77384)  
 **Distance:** ~5 mi (about 10 min)  
@@ -14,7 +30,7 @@ Fresh seafood, oysters, and Cajun-inspired dishes.
 
 ---
 
-### 🍲 Chiba Hot Pot
+### 🍲 [Chiba Hot Pot](https://www.chibahotpot.com/)
 Interactive hot pot dining with a wide variety of broths and ingredients.  
 **Address:** [2050 Interstate 45 N, Conroe, TX 77301](https://www.google.com/maps/search/?api=1&query=2050+Interstate+45+N+Conroe+TX+77301)  
 **Distance:** ~7 mi (about 12 min)  
@@ -22,7 +38,7 @@ Interactive hot pot dining with a wide variety of broths and ingredients.
 
 ---
 
-### 🔥 Killen’s Barbecue
+### 🔥 [Killen’s Barbecue](https://www.killensbarbecue.com/)
 Famous Texas barbecue known for brisket, ribs, and smoked meats.  
 **Address:** [3613 Broadway St, Pearland, TX 77581](https://www.google.com/maps/search/?api=1&query=3613+Broadway+St+Pearland+TX+77581)  
 **Distance:** ~170 mi (about 2 hr 45 min)  
@@ -30,7 +46,7 @@ Famous Texas barbecue known for brisket, ribs, and smoked meats.
 
 ---
 
-### 🌳 Treehouse Cafe
+### 🌳 [Treehouse Cafe](https://treehousecafemagnolia.com/)
 Comfort food and homestyle cooking in a cozy Magnolia setting.  
 **Address:** [12202 FM 1488, Magnolia, TX 77354](https://www.google.com/maps/search/?api=1&query=12202+FM+1488+Magnolia+TX+77354)  
 **Distance:** ~20 mi (about 25 min)  
@@ -38,7 +54,7 @@ Comfort food and homestyle cooking in a cozy Magnolia setting.
 
 ---
 
-### 🌮 Los Cucos Mexican Cafe
+### 🌮 [Los Cucos Mexican Cafe](https://www.loscucos.com/)
 Classic Tex-Mex favorites including fajitas, enchiladas, tacos, and margaritas.  
 **Address:** [4775 W Panther Creek Dr, Suite 200, The Woodlands, TX 77381](https://www.google.com/maps/search/?api=1&query=4775+W+Panther+Creek+Dr+Suite+200+The+Woodlands+TX+77381)  
 **Distance:** ~14 mi (about 20 min)  
