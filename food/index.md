@@ -4,7 +4,15 @@ title: Restaurants to Visit
 permalink: /food/
 ---
 
-## 🍽️ Recommended Restaurants
+## 🍽️ Recommended Restaurants (from 1519 Heartwood Dr, Conroe, TX 77384)
+
+### 🦐 [Vida Mariscos (Cypress)](https://www.vidamariscos.com/)
+Mexican seafood with a lively atmosphere, featuring ceviches, cocktails, and mariscos favorites.  
+**Address:** [22400 Tomball Parkway, Houston, TX 77070](https://www.google.com/maps/search/?api=1&query=22400+Tomball+Parkway+Houston+TX+77070)  
+**Distance:** ~30 mi (about 35–45 min)  
+**Website:** https://www.vidamariscos.com/
+
+---
 
 ### 🦪 [Good Charlie’s Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/)
 Fresh seafood, oysters, and Cajun-inspired dishes.  
