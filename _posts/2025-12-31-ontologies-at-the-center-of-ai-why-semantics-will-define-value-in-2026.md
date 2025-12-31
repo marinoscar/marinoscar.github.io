@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ontologies at the Center of AI: Why Semantics Will Define Value in 2026
+title: Ontologies at the Center of AI Why Semantics Will Define Value in 2026
 subtitle: How enterprises can unlock AI value by turning data into shared knowledge through semantic models and knowledge graphs.
 cover-img: /assets/img/ontologies-enterprise-ai-strategy-2026.png
 thumbnail-img: /assets/img/ontologies-enterprise-ai-strategy-2026.png
