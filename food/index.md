@@ -4,7 +4,7 @@ title: Restaurants to Visit
 permalink: /food/
 ---
 
-## 🍽️ Recommended Restaurants (from 1519 Heartwood Dr, Conroe, TX 77384)
+## 🍽️ Recommended Restaurants
 
 ### 🦪 [Good Charlie’s Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/)
 Fresh seafood, oysters, and Cajun-inspired dishes.  
