@@ -4,13 +4,21 @@ title: Restaurants to Visit
 permalink: /food/
 ---
 
-## 🍽️ Recommended Restaurants (from 1519 Heartwood Dr, Conroe, TX 77384)
+## 🍽️ Recommended Restaurants
 
 ### 🦐 [Vida Mariscos (Cypress)](https://www.vidamariscos.com/)
 Mexican seafood with a lively atmosphere, featuring ceviches, cocktails, and mariscos favorites.  
 **Address:** [22400 Tomball Parkway, Houston, TX 77070](https://www.google.com/maps/search/?api=1&query=22400+Tomball+Parkway+Houston+TX+77070)  
 **Distance:** ~30 mi (about 35–45 min)  
 **Website:** https://www.vidamariscos.com/
+
+---
+
+### 🍖 [Sal e Brasa Brazilian Steakhouse](https://www.salebrasausa.com/)
+Traditional Brazilian churrascaria offering rodízio-style grilled meats, salad bar, and classic sides — great for celebrations or special dinners.  
+**Address:** [1700 Research Forest Dr, Shenandoah, TX 77381](https://www.google.com/maps/search/?api=1&query=1700+Research+Forest+Dr+Shenandoah+TX+77381)  
+**Distance:** ~18 mi (about 25 min)  
+**Website:** https://www.salebrasausa.com/
 
 ---
 
