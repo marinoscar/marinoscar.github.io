@@ -4,7 +4,7 @@ title: Restaurants to Visit
 permalink: /food/
 ---
 
-## 🍽️ Recommended Restaurants (The Woodlands, Conroe, Magnolia & Nearby)
+## 🍽️ Recommended Restaurants
 
 ### 🦪 Good Charlie’s Oyster Bar & Seafood Kitchen
 Fresh seafood, oysters, and Cajun-inspired dishes.  
