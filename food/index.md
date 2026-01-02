@@ -22,7 +22,7 @@ Traditional Brazilian churrascaria offering rodízio-style grilled meats, salad 
 
 ---
 
-### 🦪 [Good Charlie’s Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/)
+### 🦪 [Good Charlie's Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/)
 Fresh seafood, oysters, and Cajun-inspired dishes.  
 **Address:** [545 Woodland Square Blvd, Conroe, TX 77384](https://www.google.com/maps/search/?api=1&query=545+Woodland+Square+Blvd+Conroe+TX+77384)  
 **Distance:** ~5 mi (about 10 min)  
@@ -38,7 +38,15 @@ Interactive hot pot dining with a wide variety of broths and ingredients.
 
 ---
 
-### 🔥 [Killen’s Barbecue](https://www.killensbarbecue.com/)
+### 🍝 [Amalfi Taste](https://amalfitaste.com/)
+Authentic Italian restaurant featuring fresh pasta, seafood, and traditional Italian cuisine in an elegant setting.  
+**Address:** [2295 Woodforest Parkway North, Suite 200, Montgomery, TX 77316](https://www.google.com/maps/search/?api=1&query=2295+Woodforest+Parkway+North+Suite+200+Montgomery+TX+77316)  
+**Distance:** ~9 mi (about 15–20 min)  
+**Website:** https://amalfitaste.com/
+
+---
+
+### 🔥 [Killen's Barbecue](https://www.killensbarbecue.com/)
 Famous Texas barbecue known for brisket, ribs, and smoked meats.  
 **Address:** [3613 Broadway St, Pearland, TX 77581](https://www.google.com/maps/search/?api=1&query=3613+Broadway+St+Pearland+TX+77581)  
 **Distance:** ~170 mi (about 2 hr 45 min)  
