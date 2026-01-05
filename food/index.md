@@ -6,7 +6,7 @@ permalink: /food/
 
 ## 🍽️ Recommended Restaurants
 
-### 🦐 [Vida Mariscos (Cypress)](https://www.vidamariscos.com/)
+### 🦐 [Vida Mariscos (Cypress)](https://www.vidamariscos.com/) {#vida-mariscos}
 Mexican seafood with a lively atmosphere, featuring ceviches, cocktails, and mariscos favorites.  
 **Address:** [22400 Tomball Parkway, Houston, TX 77070](https://www.google.com/maps/search/?api=1&query=22400+Tomball+Parkway+Houston+TX+77070)  
 **Distance:** ~30 mi (about 35–45 min)  
@@ -14,7 +14,7 @@ Mexican seafood with a lively atmosphere, featuring ceviches, cocktails, and mar
 
 ---
 
-### 🍖 [Sal e Brasa Brazilian Steakhouse](https://www.salebrasausa.com/)
+### 🍖 [Sal e Brasa Brazilian Steakhouse](https://www.salebrasausa.com/) {#sal-e-brasa}
 Traditional Brazilian churrascaria offering rodízio-style grilled meats, salad bar, and classic sides — great for celebrations or special dinners.  
 **Address:** [1700 Research Forest Dr, Shenandoah, TX 77381](https://www.google.com/maps/search/?api=1&query=1700+Research+Forest+Dr+Shenandoah+TX+77381)  
 **Distance:** ~18 mi (about 25 min)  
@@ -22,7 +22,7 @@ Traditional Brazilian churrascaria offering rodízio-style grilled meats, salad 
 
 ---
 
-### 🦪 [Good Charlie's Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/)
+### 🦪 [Good Charlie's Oyster Bar & Seafood Kitchen](https://www.goodcharlies.com/) {#good-charlies}
 Fresh seafood, oysters, and Cajun-inspired dishes.  
 **Address:** [545 Woodland Square Blvd, Conroe, TX 77384](https://www.google.com/maps/search/?api=1&query=545+Woodland+Square+Blvd+Conroe+TX+77384)  
 **Distance:** ~5 mi (about 10 min)  
@@ -30,7 +30,7 @@ Fresh seafood, oysters, and Cajun-inspired dishes.
 
 ---
 
-### 🍲 [Chiba Hot Pot](https://www.chibahotpot.com/)
+### 🍲 [Chiba Hot Pot](https://www.chibahotpot.com/) {#chiba-hot-pot}
 Interactive hot pot dining with a wide variety of broths and ingredients.  
 **Address:** [2050 Interstate 45 N, Conroe, TX 77301](https://www.google.com/maps/search/?api=1&query=2050+Interstate+45+N+Conroe+TX+77301)  
 **Distance:** ~7 mi (about 12 min)  
@@ -38,7 +38,7 @@ Interactive hot pot dining with a wide variety of broths and ingredients.
 
 ---
 
-### 🍝 [Amalfi Taste](https://amalfitaste.com/)
+### 🍝 [Amalfi Taste](https://amalfitaste.com/) {#amalfi-taste}
 Authentic Italian restaurant featuring fresh pasta, seafood, and traditional Italian cuisine in an elegant setting.  
 **Address:** [2295 Woodforest Parkway North, Suite 200, Montgomery, TX 77316](https://www.google.com/maps/search/?api=1&query=2295+Woodforest+Parkway+North+Suite+200+Montgomery+TX+77316)  
 **Distance:** ~9 mi (about 15–20 min)  
@@ -46,7 +46,7 @@ Authentic Italian restaurant featuring fresh pasta, seafood, and traditional Ita
 
 ---
 
-### 🔥 [Killen's Barbecue](https://www.killensbarbecue.com/)
+### 🔥 [Killen's Barbecue](https://www.killensbarbecue.com/) {#killens-barbecue}
 Famous Texas barbecue known for brisket, ribs, and smoked meats.  
 **Address:** [3613 Broadway St, Pearland, TX 77581](https://www.google.com/maps/search/?api=1&query=3613+Broadway+St+Pearland+TX+77581)  
 **Distance:** ~170 mi (about 2 hr 45 min)  
@@ -54,7 +54,7 @@ Famous Texas barbecue known for brisket, ribs, and smoked meats.
 
 ---
 
-### 🌳 [Treehouse Cafe](https://treehousecafemagnolia.com/)
+### 🌳 [Treehouse Cafe](https://treehousecafemagnolia.com/) {#treehouse-cafe}
 Comfort food and homestyle cooking in a cozy Magnolia setting.  
 **Address:** [12202 FM 1488, Magnolia, TX 77354](https://www.google.com/maps/search/?api=1&query=12202+FM+1488+Magnolia+TX+77354)  
 **Distance:** ~20 mi (about 25 min)  
@@ -62,7 +62,7 @@ Comfort food and homestyle cooking in a cozy Magnolia setting.
 
 ---
 
-### 🌮 [Los Cucos Mexican Cafe](https://www.loscucos.com/)
+### 🌮 [Los Cucos Mexican Cafe](https://www.loscucos.com/) {#los-cucos}
 Classic Tex-Mex favorites including fajitas, enchiladas, tacos, and margaritas.  
 **Address:** [4775 W Panther Creek Dr, Suite 200, The Woodlands, TX 77381](https://www.google.com/maps/search/?api=1&query=4775+W+Panther+Creek+Dr+Suite+200+The+Woodlands+TX+77381)  
 **Distance:** ~14 mi (about 20 min)  
@@ -70,7 +70,7 @@ Classic Tex-Mex favorites including fajitas, enchiladas, tacos, and margaritas.
 
 ---
 
-### 🏰 [Knight's Tavern](https://knightstaverntx.com/)
+### 🏰 [Knight's Tavern](https://knightstaverntx.com/) {#knight-tavern}
 Medieval-themed bar and restaurant offering classic American fare and drinks in a unique atmosphere, located near the Texas Renaissance Festival.  
 **Address:** [10494 Glass Road, Plantersville, TX 77363](https://www.google.com/maps/search/?api=1&query=10494+Glass+Road+Plantersville+TX+77363)  
 **Distance:** ~23 mi (about 30 min)  
