@@ -75,3 +75,11 @@ Medieval-themed bar and restaurant offering classic American fare and drinks in 
 **Address:** [10494 Glass Road, Plantersville, TX 77363](https://www.google.com/maps/search/?api=1&query=10494+Glass+Road+Plantersville+TX+77363)  
 **Distance:** ~23 mi (about 30 min)  
 **Website:** https://knightstaverntx.com/
+
+---
+
+### 🍕 [On the Kirb](https://www.onthekirb.com/) {#on-the-kirb}
+Organic eatery and sports bar featuring fire-oven Neapolitan pizzas, grass-fed burgers, and health-conscious menu options with vegan and gluten-free choices.  
+**Address:** [5004 Kirby Dr, Houston, TX 77098](https://www.google.com/maps/search/?api=1&query=5004+Kirby+Dr+Houston+TX+77098)  
+**Distance:** ~50 mi (about 1 hr)  
+**Website:** https://www.onthekirb.com/
