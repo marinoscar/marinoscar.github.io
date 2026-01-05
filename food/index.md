@@ -67,3 +67,11 @@ Classic Tex-Mex favorites including fajitas, enchiladas, tacos, and margaritas.
 **Address:** [4775 W Panther Creek Dr, Suite 200, The Woodlands, TX 77381](https://www.google.com/maps/search/?api=1&query=4775+W+Panther+Creek+Dr+Suite+200+The+Woodlands+TX+77381)  
 **Distance:** ~14 mi (about 20 min)  
 **Website:** https://www.loscucos.com/
+
+---
+
+### 🏰 [Knight's Tavern](https://knightstaverntx.com/)
+Medieval-themed bar and restaurant offering classic American fare and drinks in a unique atmosphere, located near the Texas Renaissance Festival.  
+**Address:** [10494 Glass Road, Plantersville, TX 77363](https://www.google.com/maps/search/?api=1&query=10494+Glass+Road+Plantersville+TX+77363)  
+**Distance:** ~23 mi (about 30 min)  
+**Website:** https://knightstaverntx.com/
