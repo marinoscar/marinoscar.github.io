@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oscar Marin — Option 4: Glass Minimal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000000;
+    --surface: rgba(255,255,255,0.04);
+    --surface-hi: rgba(255,255,255,0.07);
+    --border: rgba(255,255,255,0.08);
+    --border-hi: rgba(255,255,255,0.16);
+    --text: #F5F5F5;
+    --muted: #8A8A8E;
+    --muted-hi: #B5B5BA;
+    --amber: #F5C56B;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: 0 0;
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+  /* Nav */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .wordmark {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 14px; letter-spacing: 0.02em; color: var(--text);
+  }
+  .wordmark .av {
+    width: 24px; height: 24px; border-radius: 50%;
+    border: 1px solid var(--border-hi);
+  }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+  .nav-link {
+    font-size: 13px; color: var(--muted-hi);
+    transition: color .2s ease;
+  }
+  .nav-link:hover { color: var(--text); }
+  .amber-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--amber);
+    display: inline-block;
+  }
+
+  /* Hero */
+  .hero { padding: 140px 0 120px; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-size: 12px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 56px;
+  }
+  h1.hero-title {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: clamp(54px, 9vw, 120px);
+    line-height: 1; letter-spacing: -0.02em;
+    margin: 0 0 36px;
+    max-width: 14ch;
+  }
+  h1 .italic {
+    font-style: italic; color: var(--muted-hi);
+  }
+  h1 .amber-dot {
+    transform: translateY(-12px);
+    margin: 0 6px 0 4px;
+  }
+  .hero-sub {
+    font-size: clamp(18px, 1.5vw, 21px);
+    color: var(--muted-hi);
+    max-width: 56ch; margin: 0 0 56px;
+    line-height: 1.55;
+  }
+  .hero-meta {
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-size: 13px; color: var(--muted-hi);
+  }
+  .hero-meta .role {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--text);
+  }
+  .hero-meta .role img {
+    width: 28px; height: 28px; border-radius: 50%;
+    border: 1px solid var(--border-hi);
+  }
+  .hero-meta .sep { color: var(--border-hi); }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-left: auto;
+    padding: 10px 18px; border-radius: 999px;
+    border: 1px solid var(--border-hi);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 13px;
+    transition: all .2s ease;
+  }
+  .hero-cta:hover { border-color: var(--amber); color: var(--amber); }
+  .hero-cta .arrow { color: var(--amber); }
+  .hero-cta:hover .arrow { color: var(--text); }
+
+  /* Section */
+  .section { padding: 96px 0; border-top: 1px solid var(--border); }
+  .section-row {
+    display: grid; grid-template-columns: 220px 1fr;
+    gap: 64px; align-items: start;
+  }
+  .section-label {
+    position: sticky; top: 88px;
+    font-size: 12px; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-label .num {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-size: 22px;
+    color: var(--amber); letter-spacing: 0;
+    text-transform: none;
+  }
+
+  /* About */
+  .about-body { max-width: 60ch; }
+  .about-body p {
+    font-size: 19px; color: var(--text); margin: 0 0 22px;
+    line-height: 1.7; font-weight: 300;
+  }
+  .about-body p:first-child {
+    font-family: 'Instrument Serif', serif;
+    font-size: 26px; color: var(--text); font-weight: 400;
+    line-height: 1.45; margin-bottom: 28px;
+  }
+  .about-body p strong { color: var(--text); font-weight: 500; }
+
+  /* Posts */
+  .post-list {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 56px 40px;
+  }
+  .post {
+    display: block;
+    transition: opacity .2s ease;
+  }
+  .post:hover { opacity: 1; }
+  .post-list:hover .post { opacity: 0.5; }
+  .post-list .post:hover { opacity: 1; }
+  .post-thumb {
+    aspect-ratio: 4/3; overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+    background: var(--surface);
+  }
+  .post-thumb img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .5s ease;
+  }
+  .post:hover .post-thumb img { transform: scale(1.04); }
+  .post-meta {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 12px; letter-spacing: 0.06em;
+    color: var(--muted); margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .post-meta .dot { color: var(--amber); font-size: 10px; }
+  .post-title {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 26px; line-height: 1.2;
+    letter-spacing: -0.005em;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .post-sub {
+    font-size: 15px; color: var(--muted-hi); margin: 0;
+    max-width: 38ch; line-height: 1.55;
+  }
+  .post-arrow {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12px; color: var(--muted);
+    margin-top: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .post:hover .post-arrow { color: var(--amber); }
+
+  .archive-link {
+    display: inline-flex; align-items: center; gap: 12px;
+    margin-top: 64px;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-size: 22px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    transition: all .2s ease;
+  }
+  .archive-link:hover { border-color: var(--amber); color: var(--amber); }
+  .archive-link::after { content: "→"; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 72px 0 56px;
+  }
+  .foot-row {
+    display: flex; justify-content: space-between; align-items: end;
+    flex-wrap: wrap; gap: 32px;
+    margin-bottom: 56px;
+  }
+  .foot-headline {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.05; letter-spacing: -0.01em;
+    margin: 0; max-width: 14ch;
+  }
+  .foot-headline .italic { font-style: italic; color: var(--muted-hi); }
+  .foot-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 24px; border-radius: 999px;
+    background: var(--text); color: var(--bg);
+    font-size: 14px; font-weight: 500;
+    transition: all .2s ease;
+  }
+  .foot-cta:hover { background: var(--amber); }
+  .foot-meta {
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px; color: var(--muted);
+  }
+  .socials { display: flex; gap: 18px; }
+  .socials a { color: var(--muted); transition: color .15s ease; }
+  .socials a:hover { color: var(--amber); }
+  .socials svg { width: 17px; height: 17px; }
+
+  @media (max-width: 820px) {
+    .hero { padding: 80px 0 72px; }
+    .hero-meta { flex-direction: column; align-items: flex-start; }
+    .hero-cta { margin-left: 0; }
+    .section-row { grid-template-columns: 1fr; gap: 28px; }
+    .section-label { position: static; }
+    .post-list { grid-template-columns: 1fr; gap: 44px; }
+    .foot-row { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="wordmark">
+      <img class="av" src="../assets/img/oscar-cartoon.png" alt=""> Oscar Marin
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#writing">Writing</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <span class="amber-dot" aria-hidden="true"></span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">
+      <span class="amber-dot"></span>
+      Managing Director · Data &amp; AI · EY
+    </span>
+    <h1 class="hero-title">
+      Fueling innovation <span class="italic">with</span> data<span class="amber-dot"></span>
+      Reimagining the world <span class="italic">through</span> AI.
+    </h1>
+    <p class="hero-sub">A personal site by Oscar Marin — notes on data, AI, semantics, and the craft of building intelligence into the systems that run the modern enterprise.</p>
+
+    <div class="hero-meta">
+      <span class="role"><img src="../assets/img/oscar-cartoon.png" alt=""> Oscar Marin</span>
+      <span class="sep">/</span>
+      <span>Houston, TX</span>
+      <span class="sep">/</span>
+      <span>Currently writing about ontologies &amp; agentic AI</span>
+      <a href="#writing" class="hero-cta">Read the writing <span class="arrow">→</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <div class="container section-row">
+    <div class="section-label"><span class="num">i.</span> About</div>
+    <div class="about-body">
+      <p>Hi, I'm Oscar Marin — a technology consulting leader and Managing Director at <strong>EY</strong>, specializing in <strong>Data and AI</strong>. I work closely with some of the world's companies to help them harness the power of data, accelerate digital transformation, and drive sustainable innovation across their value chain.</p>
+      <p>With a strong background in software engineering, data architecture, and AI strategy, I bridge the gap between business and technology. Whether I'm advising on MLOps, designing scalable applications, or leading workshops on generative AI, I'm passionate about delivering impactful solutions that empower organizations to thrive in a changing world.</p>
+      <p>Outside of work, I'm a proud husband and father of two daughters, a lifelong learner, and an advocate for purposeful living. I also enjoy building side projects, writing open-source tools, and exploring the intersection of technology and everyday life.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="writing">
+  <div class="container section-row">
+    <div class="section-label"><span class="num">ii.</span> Writing</div>
+    <div>
+      <div class="post-list">
+
+        <a class="post" href="#">
+          <div class="post-thumb"><img src="../assets/img/ontologies-enterprise-ai-strategy-2026.png" alt=""></div>
+          <div class="post-meta"><span>Dec 31, 2025</span><span class="dot">●</span><span>Essay</span></div>
+          <h3 class="post-title">Ontologies at the Center of AI: Why Semantics Will Define Value in 2026</h3>
+          <p class="post-sub">How enterprises can unlock AI value by turning data into shared knowledge through semantic models and knowledge graphs.</p>
+          <span class="post-arrow">Read →</span>
+        </a>
+
+        <a class="post" href="#">
+          <div class="post-thumb"><img src="../assets/img/mcp-04302025.png" alt=""></div>
+          <div class="post-meta"><span>Apr 30, 2025</span><span class="dot">●</span><span>Standards</span></div>
+          <h3 class="post-title">What is MCP and Why You Should Care</h3>
+          <p class="post-sub">How a new open standard is making AI smarter, faster, and more useful.</p>
+          <span class="post-arrow">Read →</span>
+        </a>
+
+        <a class="post" href="#">
+          <div class="post-thumb"><img src="../assets/img/semantic-agent-042025.png" alt=""></div>
+          <div class="post-meta"><span>Apr 7, 2025</span><span class="dot">●</span><span>Architecture</span></div>
+          <h3 class="post-title">How Semantic Models Enable Scalable Agentic AI</h3>
+          <p class="post-sub">Why semantic models are the backbone of intelligent, scalable AI agents in the enterprise.</p>
+          <span class="post-arrow">Read →</span>
+        </a>
+
+        <a class="post" href="#">
+          <div class="post-thumb"><img src="../assets/img/semantic-models-01.png" alt=""></div>
+          <div class="post-meta"><span>Mar 29, 2025</span><span class="dot">●</span><span>Foundations</span></div>
+          <h3 class="post-title">Introduction to Semantic Models for the Future of AI Interfaces</h3>
+          <p class="post-sub">How semantic models empower conversational AI to better understand your business.</p>
+          <span class="post-arrow">Read →</span>
+        </a>
+
+      </div>
+      <a class="archive-link" href="#">Browse all writing</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="foot-row">
+      <h2 class="foot-headline">Let's <span class="italic">talk</span> data &amp; AI<span class="amber-dot"></span></h2>
+      <a href="mailto:hello@marin.cr" class="foot-cta">Get in touch →</a>
+    </div>
+    <div class="foot-meta">
+      <span>© 2026 Oscar Marin · marin.cr · Houston, TX</span>
+      <div class="socials">
+        <a href="https://github.com/marinoscar" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.55C20.21 21.39 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg></a>
+        <a href="https://twitter.com/marin_cr" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.49 8.56L23 22h-6.875l-5.39-7.05L4.5 22H1.244l8.02-9.16L1 2h7.05l4.87 6.43L18.244 2zm-2.41 18h1.93L7.235 4H5.16l10.674 16z"/></svg></a>
+        <a href="https://linkedin.com/in/marinoscar" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="/feed.xml" aria-label="RSS"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.43 5.5v3.21c7.06 0 12.79 5.73 12.79 12.79h3.21C19.43 12.27 12.23 5.5 3.43 5.5zm0 6.42v3.21c3.55 0 6.42 2.87 6.42 6.43h3.21c0-5.32-4.31-9.64-9.64-9.64zM6.64 18.36a2.14 2.14 0 1 1-4.29 0 2.14 2.14 0 0 1 4.29 0z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

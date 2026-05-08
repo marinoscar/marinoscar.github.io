@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oscar Marin — Option 2: Neo Terminal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0A0A0B;
+    --bg-2: #07070A;
+    --surface: #111214;
+    --surface-hi: #16181C;
+    --border: #1F2229;
+    --border-hi: #2A2F38;
+    --text: #E2E8EE;
+    --muted: #6B7280;
+    --muted-hi: #9CA3AF;
+    --cyan: #22D3EE;
+    --cyan-glow: rgba(34,211,238,0.35);
+    --lime: #A3E635;
+    --magenta: #F472B6;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background:
+      linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px) 0 0/100% 3px,
+      var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { color: var(--text); }
+  img { max-width: 100%; display: block; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+  /* Nav */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10,10,11,0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .wordmark {
+    color: var(--text); font-weight: 500;
+  }
+  .wordmark::before {
+    content: "$ "; color: var(--cyan);
+  }
+  .wordmark .pipe { color: var(--muted); margin: 0 6px; }
+  .wordmark .role { color: var(--muted-hi); }
+  .nav-right { display: flex; align-items: center; gap: 28px; }
+  .nav-link { color: var(--muted-hi); }
+  .nav-link::before { content: "/"; color: var(--muted); margin-right: 2px; }
+  .nav-link:hover { color: var(--cyan); text-shadow: 0 0 12px var(--cyan-glow); }
+  .nav-avatar {
+    width: 32px; height: 32px; border-radius: 4px;
+    border: 1px solid var(--cyan); padding: 1px;
+  }
+  .status-dot {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--lime); font-size: 12px;
+  }
+  .status-dot::before {
+    content: ""; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--lime); box-shadow: 0 0 8px var(--lime);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse { 50% { opacity: 0.4; } }
+
+  /* Hero */
+  .hero { padding: 88px 0 64px; }
+  .term-window {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+  }
+  .term-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--muted);
+  }
+  .term-dot { width: 11px; height: 11px; border-radius: 50%; }
+  .d-r { background: #FF5F57; }
+  .d-y { background: #FEBC2E; }
+  .d-g { background: #28C840; }
+  .term-path { margin-left: 14px; }
+  .term-path .accent { color: var(--cyan); }
+
+  .term-body {
+    padding: 56px 56px 64px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .prompt-line {
+    color: var(--muted-hi); font-size: 13px;
+    margin-bottom: 32px;
+  }
+  .prompt-line .pre { color: var(--cyan); }
+  .prompt-line .arg { color: var(--lime); }
+  .hero-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 14px;
+    color: var(--text);
+  }
+  .hero-name .accent {
+    color: var(--cyan);
+    text-shadow: 0 0 24px rgba(34,211,238,0.25);
+  }
+  .hero-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(17px, 1.6vw, 21px); color: var(--muted-hi);
+    max-width: 60ch; margin: 0 0 28px; line-height: 1.5;
+  }
+  .typed::after {
+    content: "▍"; color: var(--cyan);
+    margin-left: 6px;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  .hero-meta-row {
+    display: flex; flex-wrap: wrap; gap: 22px;
+    margin: 32px 0 28px; padding: 18px 0;
+    border-top: 1px dashed var(--border-hi);
+    border-bottom: 1px dashed var(--border-hi);
+    font-size: 12px; color: var(--muted-hi);
+  }
+  .hero-meta-row strong { color: var(--cyan); font-weight: 500; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    border: 1px solid var(--border-hi); border-radius: 6px;
+    transition: all .15s ease;
+  }
+  .btn-primary { background: var(--cyan); color: #001218; border-color: var(--cyan); }
+  .btn-primary:hover { background: #67e8f9; border-color: #67e8f9; box-shadow: 0 0 0 4px var(--cyan-glow); }
+  .btn-ghost { color: var(--text); }
+  .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); }
+  .btn .arrow { color: inherit; }
+
+  /* Section labels */
+  .section { padding: 80px 0; border-top: 1px solid var(--border); }
+  .section-comment {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--muted); margin-bottom: 6px;
+  }
+  .section-comment::before { content: "// "; color: var(--lime); }
+  .section-title {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+    font-size: clamp(26px, 3vw, 36px);
+    margin: 0 0 36px; letter-spacing: -0.01em;
+  }
+  .section-title .hash { color: var(--cyan); margin-right: 8px; }
+
+  /* About — man page */
+  .man {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .man-head {
+    padding: 12px 18px; font-size: 12px;
+    background: var(--bg-2); color: var(--muted-hi);
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between;
+  }
+  .man-body { padding: 32px 36px; }
+  .man-body h4 {
+    color: var(--cyan); font-size: 12px; letter-spacing: 0.18em;
+    margin: 24px 0 10px; font-weight: 500;
+  }
+  .man-body h4:first-child { margin-top: 0; }
+  .man-body p {
+    font-family: 'Inter', sans-serif; color: #C7CCD3;
+    font-size: 16px; margin: 0 0 14px; line-height: 1.7;
+  }
+
+  /* Posts grid */
+  .post-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .post-card {
+    display: flex; flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all .2s ease;
+    color: var(--text);
+  }
+  .post-card:hover {
+    border-color: var(--cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 1px var(--cyan), 0 24px 48px rgba(0,0,0,0.5);
+  }
+  .post-img {
+    aspect-ratio: 16/9; overflow: hidden;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--border);
+  }
+  .post-img img { width: 100%; height: 100%; object-fit: cover; }
+  .post-body { padding: 22px 22px 26px; }
+  .post-meta {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--muted-hi); margin-bottom: 12px;
+    display: flex; gap: 14px;
+  }
+  .post-meta .date { color: var(--cyan); }
+  .post-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px; line-height: 1.35; font-weight: 500;
+    margin: 0 0 10px; letter-spacing: -0.01em;
+  }
+  .post-card:hover .post-title { color: var(--cyan); }
+  .post-sub {
+    font-family: 'Inter', sans-serif; color: var(--muted-hi);
+    font-size: 14px; margin: 0 0 16px; line-height: 1.55;
+  }
+  .post-tags {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  }
+  .post-tags .tag {
+    color: var(--lime);
+  }
+  .post-tags .tag::before { content: "["; color: var(--muted); }
+  .post-tags .tag::after { content: "]"; color: var(--muted); }
+
+  /* Footer */
+  footer {
+    padding: 48px 0 56px; border-top: 1px solid var(--border);
+    color: var(--muted-hi); font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .foot-grid {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 18px;
+  }
+  .foot-grid .copy::before { content: "$ "; color: var(--cyan); }
+  .socials { display: flex; gap: 10px; }
+  .socials a {
+    width: 36px; height: 36px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid var(--border-hi); border-radius: 6px;
+    color: var(--muted-hi); transition: all .15s ease;
+  }
+  .socials a:hover { border-color: var(--cyan); color: var(--cyan); box-shadow: 0 0 0 3px var(--cyan-glow); }
+  .socials svg { width: 15px; height: 15px; }
+
+  @media (max-width: 820px) {
+    .term-body { padding: 36px 22px 44px; }
+    .post-grid { grid-template-columns: 1fr; }
+    .nav-link.hide-mobile { display: none; }
+    .wordmark .role { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="wordmark mono">oscar<span class="pipe">@</span>marin.cr <span class="role">~ md/data&amp;ai</span></a>
+    <div class="nav-right">
+      <a class="nav-link hide-mobile" href="#about">about</a>
+      <a class="nav-link hide-mobile" href="#writing">writing</a>
+      <a class="nav-link" href="#contact">contact</a>
+      <span class="status-dot mono">online</span>
+      <img class="nav-avatar" src="../assets/img/oscar-cartoon.png" alt="Oscar">
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="term-window">
+      <div class="term-bar">
+        <span class="term-dot d-r"></span>
+        <span class="term-dot d-y"></span>
+        <span class="term-dot d-g"></span>
+        <span class="term-path">marin.cr — <span class="accent">~/whoami</span></span>
+      </div>
+      <div class="term-body">
+        <div class="prompt-line"><span class="pre">$</span> whoami <span class="arg">--verbose</span></div>
+        <h1 class="hero-name">Oscar <span class="accent">Marin</span>.</h1>
+        <p class="hero-sub typed">Fueling innovation with data. Reimagining the world through AI — at the intersection of strategy, engineering, and the enterprise.</p>
+
+        <div class="hero-meta-row mono">
+          <span><strong>role</strong> = "Managing Director"</span>
+          <span><strong>org</strong> = "EY"</span>
+          <span><strong>focus</strong> = ["Data", "AI"]</span>
+          <span><strong>loc</strong> = "Houston, TX"</span>
+        </div>
+
+        <div class="cta-row">
+          <a href="#writing" class="btn btn-primary">./read-blog <span class="arrow">→</span></a>
+          <a href="#contact" class="btn btn-ghost">cat contact.md</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-comment">about — what I do and why</div>
+    <h2 class="section-title"><span class="hash">#</span>about</h2>
+
+    <div class="man">
+      <div class="man-head">
+        <span>ABOUT(1)</span>
+        <span>Personal Notes</span>
+        <span>oscar@marin.cr</span>
+      </div>
+      <div class="man-body">
+        <h4>NAME</h4>
+        <p>Oscar Marin — technology consulting leader and Managing Director at EY, specializing in Data and AI. I work closely with some of the world's companies to help them harness the power of data, accelerate digital transformation, and drive sustainable innovation across their value chain.</p>
+        <h4>DESCRIPTION</h4>
+        <p>With a strong background in software engineering, data architecture, and AI strategy, I bridge the gap between business and technology. Whether I'm advising on MLOps, designing scalable applications, or leading workshops on generative AI, I'm passionate about delivering impactful solutions that empower organizations to thrive in a changing world.</p>
+        <h4>OFF-HOURS</h4>
+        <p>Outside of work, I'm a proud husband and father of two daughters, a lifelong learner, and an advocate for purposeful living. I also enjoy building side projects, writing open-source tools, and exploring the intersection of technology and everyday life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="writing">
+  <div class="container">
+    <div class="section-comment">writing — recent posts</div>
+    <h2 class="section-title"><span class="hash">#</span>writing</h2>
+
+    <div class="post-grid">
+
+      <a class="post-card" href="#">
+        <div class="post-img"><img src="../assets/img/ontologies-enterprise-ai-strategy-2026.png" alt=""></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="date">2025-12-31</span><span>// 10 min</span></div>
+          <h3 class="post-title">Ontologies at the Center of AI: Why Semantics Will Define Value in 2026</h3>
+          <p class="post-sub">How enterprises can unlock AI value by turning data into shared knowledge through semantic models and knowledge graphs.</p>
+          <div class="post-tags">
+            <span class="tag">ontologies</span>
+            <span class="tag">knowledge-graphs</span>
+            <span class="tag">enterprise-ai</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img"><img src="../assets/img/mcp-04302025.png" alt=""></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="date">2025-04-30</span><span>// 8 min</span></div>
+          <h3 class="post-title">What is MCP and Why You Should Care</h3>
+          <p class="post-sub">How a new open standard is making AI smarter, faster, and more useful.</p>
+          <div class="post-tags">
+            <span class="tag">mcp</span>
+            <span class="tag">model-context-protocol</span>
+            <span class="tag">ai-strategy</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img"><img src="../assets/img/semantic-agent-042025.png" alt=""></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="date">2025-04-07</span><span>// 9 min</span></div>
+          <h3 class="post-title">How Semantic Models Enable Scalable Agentic AI</h3>
+          <p class="post-sub">Why semantic models are the backbone of intelligent, scalable AI agents in the enterprise.</p>
+          <div class="post-tags">
+            <span class="tag">semantic-models</span>
+            <span class="tag">agentic-ai</span>
+            <span class="tag">enterprise-ai</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="post-card" href="#">
+        <div class="post-img"><img src="../assets/img/semantic-models-01.png" alt=""></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="date">2025-03-29</span><span>// 7 min</span></div>
+          <h3 class="post-title">Introduction to Semantic Models and Why They Matter for the Future of AI Interfaces</h3>
+          <p class="post-sub">How semantic models empower conversational AI to better understand your business.</p>
+          <div class="post-tags">
+            <span class="tag">semantic-models</span>
+            <span class="tag">ai-strategy</span>
+            <span class="tag">future-of-work</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container foot-grid">
+    <div class="copy">echo "© 2026 Oscar Marin · marin.cr"</div>
+    <div class="socials">
+      <a href="https://github.com/marinoscar" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.55C20.21 21.39 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg></a>
+      <a href="https://twitter.com/marin_cr" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.49 8.56L23 22h-6.875l-5.39-7.05L4.5 22H1.244l8.02-9.16L1 2h7.05l4.87 6.43L18.244 2zm-2.41 18h1.93L7.235 4H5.16l10.674 16z"/></svg></a>
+      <a href="https://linkedin.com/in/marinoscar" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+      <a href="/feed.xml" aria-label="RSS"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.43 5.5v3.21c7.06 0 12.79 5.73 12.79 12.79h3.21C19.43 12.27 12.23 5.5 3.43 5.5zm0 6.42v3.21c3.55 0 6.42 2.87 6.42 6.43h3.21c0-5.32-4.31-9.64-9.64-9.64zM6.64 18.36a2.14 2.14 0 1 1-4.29 0 2.14 2.14 0 0 1 4.29 0z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
