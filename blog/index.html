@@ -1,46 +1,53 @@
 ---
 layout: page
 title: Blog
-subtitle: Blog posts
+subtitle: Notes on data, AI, semantics, and the modern enterprise.
 ---
-<meta property="og:image" content="{{ post.thumbnail }}">
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-	
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}  
+{% assign posts = paginator.posts | default: site.posts %}
+
+<div class="post-grid post-grid-blog">
+  {% for post in posts %}
+    {%- capture cover -%}
+      {%- if post.cover-img -%}
+        {%- if post.cover-img.first -%}{{ post.cover-img[0].first.first }}{%- else -%}{{ post.cover-img }}{%- endif -%}
+      {%- elsif post.thumbnail-img -%}{{ post.thumbnail-img }}{%- endif -%}
+    {%- endcapture -%}
+    {%- assign cover = cover | strip -%}
+
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      <div class="img"{% if cover != "" %} style="background-image: url('{{ cover | relative_url }}')"{% else %} style="background: var(--gradient-soft)"{% endif %}></div>
+      <span class="arrow" aria-hidden="true">↗</span>
+      <div class="body">
+        <div class="meta">
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          {% if post.tags.size > 0 %}
+            <span class="pill">{{ post.tags[0] }}</span>
+          {% endif %}
+        </div>
+        <h3>{{ post.title | strip_html }}</h3>
+        {% if post.subtitle %}<p class="sub">{{ post.subtitle | strip_html }}</p>{% endif %}
+      </div>
     </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-  
-    <div class="post-entry">
-      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-  
-   </article>
   {% endfor %}
 </div>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
+<ul class="pagination main-pager">
   {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  <li class="page-item previous">
+    <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      <span>Newer Posts</span>
+    </a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  <li class="page-item next">
+    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">
+      <span>Older Posts</span>
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
   </li>
   {% endif %}
 </ul>
