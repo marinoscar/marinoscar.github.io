@@ -19,6 +19,9 @@ baseurl: ""
 # Your name to show in the footer
 author: Oscar Marin
 
+# Hide the "Powered by Beautiful Jekyll" footer link
+remove-ads: true
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
