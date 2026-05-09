@@ -17,8 +17,7 @@ url: "https://marin.cr"
 baseurl: ""
 
 # Your name to show in the footer
-author:
-  name: Oscar Marin
+author: Oscar Marin
 
 ###############################################
 # --- List of links in the navigation bar --- #
