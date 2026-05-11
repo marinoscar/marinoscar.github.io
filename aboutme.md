@@ -1,16 +1,32 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About
+subtitle: Building the semantic foundation for the agentic enterprise.
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi, I'm Oscar Marin. I'm a Managing Director at EY, where I lead work in Data and AI for large enterprises. The home page covers the headline; this page is for anyone who wants the longer version.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+## What I do
 
-What else do you need?
+I help executives design the semantic foundations that make agentic AI possible at enterprise scale. In practice, that means:
 
-### My story
+- Defining the **ontologies** that capture how a business actually works — its entities, relationships, and rules.
+- Designing **semantic models and knowledge graphs** that bridge structured enterprise data with the AI systems built on top of it.
+- Architecting the **data, integration, and AI platforms** that let agentic systems reason and act reliably across complex operational environments.
+- Advising leadership on **AI strategy** — where knowledge becomes the competitive moat.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Most of my work is in **Energy and Technology**, though the patterns travel.
+
+## What I believe
+
+In a world where models and compute are becoming commodities, **meaning is the missing layer**. Ontologies define meaning. Knowledge graphs connect it. Semantic models operationalize it. Together, they turn enterprise data into something AI can truly understand — and that understanding is what separates AI demos from AI that runs the business.
+
+Most organizations have more data than they can use and more powerful models than they can deploy with confidence. The gap is not technology. It's the absence of shared meaning. That belief shapes everything I work on, and most of what I write here.
+
+## Beyond work
+
+I'm a husband and father of two daughters, based in Houston, Texas. I read widely, build open-source tools and side projects, and write here when I have something I think is worth saying.
+
+## Get in touch
+
+The best way to reach me is on [LinkedIn](https://www.linkedin.com/in/marinoscar/). If you're working on semantic foundations, agentic systems, or enterprise AI strategy and want to compare notes, I'm always up for a conversation.

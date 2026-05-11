@@ -27,6 +27,7 @@ remove-ads: true
 ###############################################
 
 navbar-links:
+  About: "aboutme"
   Blog: "blog"
 
 ################
