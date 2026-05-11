@@ -4,9 +4,7 @@ title: About
 subtitle: Building the semantic foundation for the agentic enterprise.
 ---
 
-<p style="text-align: center;">
-  <img src="/assets/img/profile2.png" alt="Oscar Marin" style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover;" />
-</p>
+<img src="/assets/img/profile2.png" alt="Oscar Marin" style="display: block; margin: 1em auto; width: 220px; height: 220px; border-radius: 50%; object-fit: cover;" />
 
 Hi, I'm Oscar Marin. I'm a Managing Director at EY, where I lead work in Data and AI for large enterprises. The home page covers the headline; this page is for anyone who wants the longer version.
 
