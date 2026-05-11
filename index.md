@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Oscar Marin
-subtitle: Fueling innovation with data. Reimagining the world through AI
+subtitle: Building the semantic foundation for the agentic enterprise.
 ---
 
-Hi, I’m Oscar Marin — a technology consulting leader and Managing Director at EY, specializing in Data and AI. I work closely with some of the world’s companies to help them harness the power of data, accelerate digital transformation, and drive sustainable innovation across their value chain.
+Hi, I’m Oscar Marin — a Managing Director at EY focused on Data and AI. I help large enterprises turn fragmented data into shared knowledge so their AI systems can actually reason, act, and scale.
 
-With a strong background in software engineering, data architecture, and AI strategy, I bridge the gap between business and technology. Whether I’m advising on MLOps, designing scalable applications, or leading workshops on generative AI, I’m passionate about delivering impactful solutions that empower organizations to thrive in a changing world.
+My work centers on the layer most organizations skip: **meaning**. Ontologies, semantic models, and knowledge graphs are what give agentic AI the context it needs to operate reliably across complex business environments. In a world where models and compute are becoming commodities, knowledge is the moat.
 
-Outside of work, I’m a proud husband and father of two daughters, a lifelong learner, and an advocate for purposeful living. I also enjoy building side projects, writing open-source tools, and exploring the intersection of technology and everyday life.
+Outside of work, I’m a husband and father of two, a lifelong learner, and I build open-source tools and side projects exploring the intersection of AI and everyday life.
