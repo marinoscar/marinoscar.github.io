@@ -42,3 +42,11 @@ Such endorsements matter. When multiple AI leaders and providers (including Open
 MCP is an optimistic development in the AI world – it promises to **make AI adoption more impactful and accessible** for all kinds of organizations. By allowing AI to work with _the same data and tools you rely on_, MCP can supercharge everything from decision support and customer service to employee productivity. It lowers the barrier to connect AI with your existing systems, so you can start seeing practical results sooner. As one expert guide put it, _entering the era of MCP_ is a **“significant leap toward seamless AI integration,”** tackling long-standing challenges of compatibility and security in one stroke.
 
 **Now is a great time to explore how MCP could benefit your business.** You might begin by talking with your technology team about experimenting with MCP in a pilot project, or by checking out the open-source resources and connectors already available. Given its rapid rise and industry backing, MCP could very well be the key to unlocking new levels of efficiency and innovation in your AI initiatives. In short, if you want your AI to be smarter, more helpful, and more deeply attuned to your business needs, **the Model Context Protocol is worth your attention**. _Don’t miss the opportunity to plug your AI into the wealth of data and tools your business already has – it might just be a game-changer for your AI strategy._
+
+---
+
+**Related reading**
+
+- [Introduction to Semantic Models and Why They Matter]({% post_url 2025-03-29-introduction-to-semantic-models-and-why-they-matter %})
+- [How Semantic Models Enable Scalable Agentic AI]({% post_url 2025-04-07-semantic-models-enable-scalable-agentic-ai %})
+- [Ontologies at the Center of AI: Why Semantics Will Define Value in 2026]({% post_url 2025-12-31-ontologies-at-the-center-of-ai-why-semantics-will-define-value-in-2026 %})

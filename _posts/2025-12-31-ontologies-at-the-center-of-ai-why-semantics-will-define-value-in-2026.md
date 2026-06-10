@@ -183,3 +183,11 @@ In a world where models and compute are becoming commodities, **knowledge become
 And knowledge starts by defining the nouns and verbs of your enterprise.
 
 > This is ultimately where the discussion about data, structure, and meaning converges. If access to data is becoming the competitive advantage, then the next step is turning that access into shared understanding. In 2026, the organizations that pull ahead will be those that invest in turning data into shared knowledge, using ontologies and knowledge graphs to make enterprise AI and agents reliable at scale.
+
+---
+
+**Related reading**
+
+- [Introduction to Semantic Models and Why They Matter]({% post_url 2025-03-29-introduction-to-semantic-models-and-why-they-matter %})
+- [How Semantic Models Enable Scalable Agentic AI]({% post_url 2025-04-07-semantic-models-enable-scalable-agentic-ai %})
+- [What is MCP and Why You Should Care]({% post_url 2025-04-30-what-is-mcp-and-why-you-should-care %})

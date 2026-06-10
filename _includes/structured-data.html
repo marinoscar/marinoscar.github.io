@@ -1,0 +1,50 @@
+{%- comment -%}
+JSON-LD structured data: anchors "Oscar Marin" as a Person entity for search
+engines and links the brand site to its social profiles. Site-specific addition
+(not upstream Beautiful Jekyll). Included once from head.html.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ '/#person' | absolute_url }}",
+      "name": "Oscar Marin",
+      "url": "{{ '/' | absolute_url | strip_index }}",
+      "image": "{{ site.avatar | absolute_url }}",
+      "jobTitle": "Managing Director, Data & AI",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "EY"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Semantic models",
+        "Ontologies",
+        "Knowledge graphs",
+        "Agentic AI",
+        "Enterprise AI strategy"
+      ],
+      "sameAs": [
+        {%- assign sep = "" -%}
+        {%- if site.social-network-links.linkedin %}{{ sep }}"https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/"{% assign sep = "," %}{% endif -%}
+        {%- if site.social-network-links.github %}{{ sep }}"https://github.com/{{ site.social-network-links.github }}"{% assign sep = "," %}{% endif -%}
+        {%- if site.social-network-links.twitter %}{{ sep }}"https://twitter.com/{{ site.social-network-links.twitter }}"{% assign sep = "," %}{% endif -%}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ '/#website' | absolute_url }}",
+      "url": "{{ '/' | absolute_url | strip_index }}",
+      "name": "{{ site.title }}",
+      "publisher": { "@id": "{{ '/#person' | absolute_url }}" }
+    }
+  ]
+}
+</script>

@@ -2,6 +2,8 @@
 layout: home
 title: Oscar Marin
 subtitle: Building the semantic foundation for the agentic enterprise.
+share-img: /assets/img/og-card.png
+share-description: Oscar Marin — Managing Director, Data & AI at EY. I help large enterprises turn fragmented data into shared knowledge so their AI systems can reason, act, and scale.
 ---
 
 Hi, I’m Oscar Marin — a Managing Director at EY focused on Data and AI. I help large enterprises turn fragmented data into shared knowledge so their AI systems can actually reason, act, and scale.

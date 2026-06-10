@@ -128,7 +128,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "Oscar Marin, semantic models, ontologies, knowledge graphs, agentic AI, enterprise AI, AI strategy, data and AI, semantic layer, MCP"
 
 ######################################
 # --- Colours / background image --- #
@@ -171,6 +171,7 @@ mobile-theme-col: "#0B0B1A"
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
+# TODO(oscar): paste your GA4 Measurement ID below and uncomment to turn on analytics
 #gtag: "G-XXXXXXXXXX"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics

@@ -39,7 +39,7 @@ layout: base
           <li><span>Firm</span><span>EY</span></li>
           <li><span>Focus</span><span>Data · AI</span></li>
           <li><span>Based</span><span>Houston, TX</span></li>
-          <li><span>Writing</span><span>{{ site.url-pretty | default: 'marin.cr' }}</span></li>
+          <li><span>Writing</span><span>{{ site.url-pretty | default: 'oscarmarin.ai' }}</span></li>
         </ul>
       </aside>
       <div class="home-about-body">
@@ -88,7 +88,7 @@ layout: base
           <div class="body">
             <div class="meta"><span class="pill">Archive</span></div>
             <h3>Browse all writing →</h3>
-            <p class="sub">Older essays on data architecture, MLOps, semantic models, and the practice of consulting in the AI era.</p>
+            <p class="sub">Essays on semantic models, ontologies, knowledge graphs, agentic AI, and the protocols (like MCP) wiring it all together.</p>
           </div>
         </a>
       {% endif %}
@@ -115,5 +115,19 @@ layout: base
       {% endif %}
     </ul>
     {% endif %}
+  </div>
+</section>
+
+<section class="section" id="connect">
+  <div class="section-wrap">
+    <span class="section-eyebrow">Connect</span>
+    <h2 class="section-title">Let&rsquo;s compare notes.</h2>
+    <p class="home-connect-lead">If you&rsquo;re working on semantic foundations, agentic systems, or enterprise AI strategy, I&rsquo;m always up for a conversation. LinkedIn is the best place to reach me.</p>
+    <div class="cta-row">
+      <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="btn-primary" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+      {% if site.social-network-links.github %}<a href="https://github.com/{{ site.social-network-links.github }}" class="btn-ghost" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if site.social-network-links.twitter %}<a href="https://twitter.com/{{ site.social-network-links.twitter }}" class="btn-ghost" target="_blank" rel="noopener">X / Twitter</a>{% endif %}
+      <a href="{{ '/feed.xml' | relative_url }}" class="btn-ghost">RSS</a>
+    </div>
   </div>
 </section>

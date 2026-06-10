@@ -49,3 +49,11 @@ We can also look at cutting-edge AI developments: for instance, the emergence of
 
 **Conclusion & Call to Action:**  
 Semantic models turn AI agents from naive interns into informed, autonomous collaborators. In enterprise applications, this means AI that can truly lighten the load – handling complex workflows, reasoning over business conditions, and coordinating actions – all while adhering to your business knowledge and rules. As AI agents become more prevalent, companies with strong semantic foundations will scale these agents much faster and safer. **What routine tasks or decisions in your business could you hand over to an AI agent if you were confident it “knew” your business as well as a long-time employee?** It’s worth identifying those opportunities now. In our next installment, we’ll look at another transformative shift: moving from traditional APIs to conversational agents as the new paradigm for integrating systems. Stay tuned to see how semantic models and agentic AI contribute to a future where talking to your enterprise systems could be as easy as messaging a colleague.
+
+---
+
+**Related reading**
+
+- [Introduction to Semantic Models and Why They Matter]({% post_url 2025-03-29-introduction-to-semantic-models-and-why-they-matter %}) — where this series starts.
+- [What is MCP and Why You Should Care]({% post_url 2025-04-30-what-is-mcp-and-why-you-should-care %})
+- [Ontologies at the Center of AI: Why Semantics Will Define Value in 2026]({% post_url 2025-12-31-ontologies-at-the-center-of-ai-why-semantics-will-define-value-in-2026 %})

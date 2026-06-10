@@ -62,3 +62,11 @@ Semantic models may sound technical, but their impact is very human: they help A
 As you’ll see in this series, semantic models underpin many advances in agentic and generative AI for the enterprise. Executives should view them not as an IT detail, but as strategic infrastructure for the future.
 
 **Is your organization ready to have AI that truly understands your business?** Thinking about the “semantic fabric” of your enterprise now will pay dividends as AI becomes ubiquitous in interfaces.
+
+---
+
+**Related reading**
+
+- [How Semantic Models Enable Scalable Agentic AI]({% post_url 2025-04-07-semantic-models-enable-scalable-agentic-ai %}) — the next post in this series.
+- [What is MCP and Why You Should Care]({% post_url 2025-04-30-what-is-mcp-and-why-you-should-care %})
+- [Ontologies at the Center of AI: Why Semantics Will Define Value in 2026]({% post_url 2025-12-31-ontologies-at-the-center-of-ai-why-semantics-will-define-value-in-2026 %})

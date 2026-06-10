@@ -766,6 +766,16 @@ a.btn-ghost {
   max-width: 22ch;
 }
 
+/* --- Connect block on home --- */
+
+.home-connect-lead {
+  font-size: clamp(1.0625rem, 1.6vw, 1.3125rem);
+  color: var(--muted-hi);
+  max-width: 60ch;
+  line-height: 1.5;
+  margin: -1rem 0 2rem;
+}
+
 /* --- About block on home --- */
 
 .home-about {

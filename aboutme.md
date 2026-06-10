@@ -2,6 +2,8 @@
 layout: page
 title: About
 subtitle: Building the semantic foundation for the agentic enterprise.
+share-img: /assets/img/og-card.png
+share-description: The longer version — how Oscar Marin designs the ontologies, semantic models, and knowledge graphs that make agentic AI reliable at enterprise scale.
 ---
 
 <img src="/assets/img/profile2.png" alt="Oscar Marin" style="display: block; margin: 1em auto; width: 220px; height: 220px; border-radius: 50%; object-fit: cover;" />
