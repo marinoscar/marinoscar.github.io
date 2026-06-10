@@ -171,8 +171,7 @@ mobile-theme-col: "#0B0B1A"
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-# TODO(oscar): paste your GA4 Measurement ID below and uncomment to turn on analytics
-#gtag: "G-XXXXXXXXXX"
+gtag: "G-BTQ4VD5SF1"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
