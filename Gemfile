@@ -14,8 +14,6 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
   
 gemspec
 
-gem 'execjs'
-gem 'therubyracer'
 gem 'github-pages'
 gem 'jemoji'
 
