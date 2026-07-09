@@ -171,6 +171,11 @@
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
   {% endif %}
 
+  {% assign touch_icon_exists = site.static_files | where: "path", "/apple-touch-icon.png" | size %}
+  {% if touch_icon_exists == 1 %}
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}" />
+  {% endif %}
+
   {% if page.head-extra %}
     {% for file in page.head-extra %}
       {% include {{ file }} %}

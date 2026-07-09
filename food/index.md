@@ -2,6 +2,9 @@
 layout: default
 title: Restaurants to Visit
 permalink: /food/
+sitemap: false
+head-extra:
+  - noindex.html
 ---
 
 ## 🍽️ Recommended Restaurants

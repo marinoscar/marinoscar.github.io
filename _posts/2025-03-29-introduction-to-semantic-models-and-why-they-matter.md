@@ -2,9 +2,9 @@
 layout: post
 title: Introduction to Semantic Models and Why They Matter for the Future of AI Interfaces
 subtitle: How semantic models empower conversational AI to better understand your business.
-cover-img: /assets/img/semantic-models-01.png
-thumbnail-img: /assets/img/semantic-models-01.png
-share-img: /assets/img/semantic-models-01.png
+cover-img: /assets/img/semantic-models-01.jpg
+thumbnail-img: /assets/img/semantic-models-01.jpg
+share-img: /assets/img/semantic-models-01.jpg
 tags: [semantic-models, enterprise-ai, ai-strategy, future-of-work]
 author: Oscar Marin
 ---
@@ -15,7 +15,7 @@ So about **semantic models** – a foundation that gives AI a richer understandi
 
 In other words, the way we communicate with computers is shifting from clicking and coding to **speaking and conversing**. For business leaders, this isn’t just a tech trend – it’s a strategic evolution. Embracing semantic models now can set the stage for AI interfaces that feel as natural as talking to a colleague, helping your organization lead in this new era.
 
-# The Rise of Conversational AI Interfaces
+## The Rise of Conversational AI Interfaces
 
 Not long ago, interacting with enterprise software meant navigating menus or filling forms. Today, we see a sea change: voice assistants, chatbots, and AI agents can handle instructions in plain English. 
 
@@ -25,7 +25,7 @@ In fact, forward-looking tech leaders have predicted that in **2025 we may see t
 
 However, anyone who’s tried chat-based AI (like a customer service bot or even a tool like ChatGPT) knows it doesn’t always get things right. Sometimes the answers lack context or precision. This is where **semantic models** enter the picture as game-changers for AI interfaces.
 
-# Why Semantic Models Matter
+## Why Semantic Models Matter
 
 Semantic models provide the AI with a structured understanding of your business domain – essentially a map of meanings and relationships. Without a semantic model, an AI might know a lot of facts or be great at grammar, but it has no _grounding_ in what those facts truly mean to your company or industry.
 
@@ -41,7 +41,7 @@ Moreover, semantic models can unify language across an enterprise. Different dep
 
 This consistency builds trust in AI outputs, a critical factor for adoption.
 
-# AI Interfaces That Understand You – and Your Business
+## AI Interfaces That Understand You – and Your Business
 
 The future of AI interfaces is often described as **ambient** and **context-aware**. We’ll interact with technology as if it were a colleague or an assistant. But to truly get there, the AI must understand the subtleties of our requests. That means understanding business jargon, product names, hierarchies, and even the tone or intent behind a question.
 
@@ -55,7 +55,7 @@ Finally, semantic models are key to **bridging AI with existing data systems**. 
 
 Instead of AI being a mysterious black box, it becomes a savvy analyst that knows where to look and how to interpret what it finds. This synergy between data and dialogue is why semantic models truly matter. They ensure AI interfaces are not just flashy demos, but reliable business tools.
 
-# Conclusion & Call to Action
+## Conclusion & Call to Action
 
 Semantic models may sound technical, but their impact is very human: they help AI understand us better. In a world where _“human language is the new UI”_ for interacting with business systems, giving AI a map of meaning is essential.
 

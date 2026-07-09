@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Ontologies at the Center of AI Why Semantics Will Define Value in 2026
+title: "Ontologies at the Center of AI: Why Semantics Will Define Value in 2026"
 subtitle: How enterprises can unlock AI value by turning data into shared knowledge through semantic models and knowledge graphs.
-cover-img: /assets/img/ontologies-enterprise-ai-strategy-2026.png
-thumbnail-img: /assets/img/ontologies-enterprise-ai-strategy-2026.png
-share-img: /assets/img/ontologies-enterprise-ai-strategy-2026.png
+cover-img: /assets/img/ontologies-enterprise-ai-strategy-2026.jpg
+thumbnail-img: /assets/img/ontologies-enterprise-ai-strategy-2026.jpg
+share-img: /assets/img/ontologies-enterprise-ai-strategy-2026.jpg
 tags: [semantic-models, enterprise-ai, knowledge-graphs, ontologies]
 author: Oscar Marin
 ---
-
-# Ontologies at the Center of AI: Why Semantics Will Define Value in 2026
 
 Over the past few years, the AI conversation has been dominated by scale: bigger models, more GPUs, faster training, and increasingly sophisticated algorithms. But as we move through 2025, that narrative is starting to shift.
 
