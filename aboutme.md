@@ -6,7 +6,7 @@ share-img: /assets/img/og-card.png
 share-description: The longer version — how Oscar Marin designs the ontologies, semantic models, and knowledge graphs that make agentic AI reliable at enterprise scale.
 ---
 
-<img src="/assets/img/profile2.png" alt="Oscar Marin" style="display: block; margin: 1em auto; width: 220px; height: 220px; border-radius: 50%; object-fit: cover;" />
+<img src="/assets/img/oscar_marin_profile_pic_2026.png" alt="Oscar Marin" style="display: block; margin: 1em auto; width: 220px; height: 220px; border-radius: 50%; object-fit: cover;" />
 
 Hi, I'm Oscar Marin. I'm a Managing Director at EY, where I lead work in Data and AI for large enterprises. The home page covers the headline; this page is for anyone who wants the longer version.
 
